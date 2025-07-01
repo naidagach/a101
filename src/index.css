@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-2xs: 420px;
+  --breakpoint-xs: 650px;
+  --breakpoint-s: 768px;
+  --breakpoint-m: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1408px;
+  --color-brand-blue-primary: #00bad3;
+  --color-brand-blue-secondary:rgb(218 251 255);
+  --color-brand-gray-border:rgb(229 231 233);
+  --color-brand-gray-background:rgb(243 246 250);
+  --color-brand-grey-border:rgb(229 231 233);
+  --color-brand-gray-primary:rgb(51 51 51);
+  /* --color-red: #d52b1e;
+  --color-darkGrey: #373737; */
+  /* --shadow-custom: inset 0 20px 20px -10px black, inset 0 -20px 20px -10px black; */
+}
+
+/* @import "tailwindcss";
+
+@theme {
+  --breakpoint-mobile: 320px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1280px;
+
+}
+*/
+.selected-border-mask {
+  -webkit-mask: radial-gradient(15px at 15px 0, #0000 98%, #000) -15px;
+  mask: radial-gradient(15px at 15px 0, #0000 98%, #000) -15px;
+}
+.shadow-custom{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;}
