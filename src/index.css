@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-2xs: 420px;
+  --breakpoint-2xs: 400px;
   --breakpoint-xs: 650px;
   --breakpoint-s: 768px;
   --breakpoint-m: 1024px;
@@ -28,9 +28,61 @@
 
 }
 */
+
 .selected-border-mask {
   -webkit-mask: radial-gradient(15px at 15px 0, #0000 98%, #000) -15px;
   mask: radial-gradient(15px at 15px 0, #0000 98%, #000) -15px;
 }
 .shadow-custom{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;}
+ 
+.swiper-pagination{
+  max-width: 600px;
+  background-color: #00000041;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto !important;
+  width: 100% !important;
+  padding: 5px;
+  border-radius: 20px;
+}
+.swiper-pagination-bullet{
+  --swiper-theme-color: #fff;
+  background-color: #fff !important;
+  white-space: nowrap !important;
+  width: 6px !important;
+  height: 6px !important;
+}
+.swiper-pagination-bullet-active {
+  width: 20px !important;
+  border-radius: 10px !important;
+}
+
+.menu{
+  &:hover{
+    .megamenu {
+      display: block;
+    }
+
+  }
+}
+.swiper-button-prev{
+  display: none !important;
+}
+.swiper-button-next{
+  background: #00bad3 !important;
+  width: 50px !important;
+  color: white !important; 
+  border-radius: 50%;
+  padding: 25px;
+  position: absolute !important;
+  right: -25px !important;
+}
+:root {
+  --swiper-navigation-size: 15px !important;
+}
+.swiper-button-next:after{
+  position: absolute;
+  left: 13px;
+
+}
